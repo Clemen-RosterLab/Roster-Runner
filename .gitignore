@@ -9,3 +9,8 @@ node_modules/
 
 # Ignore environment files
 .env
+
+# Ignore build directories
+build/
+dist/
+out/
