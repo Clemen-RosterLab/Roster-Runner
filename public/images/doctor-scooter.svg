@@ -1,0 +1,216 @@
+<svg width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Drop shadow filter -->
+<filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+<feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-color="rgba(0,0,0,0.2)"/>
+</filter>
+<!-- White coat gradient -->
+<linearGradient id="coatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+</linearGradient>
+<!-- Skin tone -->
+<radialGradient id="skinTone" cx="50%" cy="30%" r="60%">
+<stop offset="0%" style="stop-color:#fdbcb4;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#f0a085;stop-opacity:1" />
+</radialGradient>
+<!-- Metal gradient for scooter -->
+<linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#e0e0e0;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#c0c0c0;stop-opacity:1" />
+</linearGradient>
+</defs>
+<!-- Doctor on e-scooter - side profile -->
+<g class="doctor-scooter">
+<!-- E-scooter frame -->
+<!-- Deck/platform -->
+<rect x="30" y="100" width="50" height="8" 
+          fill="url(#metalGradient)" 
+          stroke="#999" 
+          stroke-width="1" 
+          rx="4"
+          filter="url(#dropShadow)"/>
+<!-- Vertical post -->
+<rect x="75" y="50" width="4" height="50" 
+          fill="url(#metalGradient)" 
+          stroke="#999" 
+          stroke-width="1"/>
+<!-- Handlebar -->
+<rect x="65" y="48" width="25" height="4" 
+          fill="url(#metalGradient)" 
+          stroke="#999" 
+          stroke-width="1" 
+          rx="2"/>
+<!-- Handlebar grips -->
+<circle cx="67" cy="50" r="3" fill="#333"/>
+<circle cx="88" cy="50" r="3" fill="#333"/>
+<!-- Front wheel -->
+<circle cx="85" cy="115" r="12" 
+            fill="white" 
+            stroke="#333" 
+            stroke-width="2"
+            filter="url(#dropShadow)">
+<animateTransform attributeName="transform" 
+                        type="rotate" 
+                        values="0 85 115; 360 85 115" 
+                        dur="1s" 
+                        repeatCount="indefinite"/>
+</circle>
+<!-- Front wheel spokes -->
+<g>
+<line x1="85" y1="103" x2="85" y2="127" stroke="#666" stroke-width="1">
+<animateTransform attributeName="transform" 
+                          type="rotate" 
+                          values="0 85 115; 360 85 115" 
+                          dur="1s" 
+                          repeatCount="indefinite"/>
+</line>
+<line x1="73" y1="115" x2="97" y2="115" stroke="#666" stroke-width="1">
+<animateTransform attributeName="transform" 
+                          type="rotate" 
+                          values="0 85 115; 360 85 115" 
+                          dur="1s" 
+                          repeatCount="indefinite"/>
+</line>
+</g>
+<!-- Back wheel -->
+<circle cx="35" cy="115" r="12" 
+            fill="white" 
+            stroke="#333" 
+            stroke-width="2"
+            filter="url(#dropShadow)">
+<animateTransform attributeName="transform" 
+                        type="rotate" 
+                        values="0 35 115; 360 35 115" 
+                        dur="1s" 
+                        repeatCount="indefinite"/>
+</circle>
+<!-- Back wheel spokes -->
+<g>
+<line x1="35" y1="103" x2="35" y2="127" stroke="#666" stroke-width="1">
+<animateTransform attributeName="transform" 
+                          type="rotate" 
+                          values="0 35 115; 360 35 115" 
+                          dur="1s" 
+                          repeatCount="indefinite"/>
+</line>
+<line x1="23" y1="115" x2="47" y2="115" stroke="#666" stroke-width="1">
+<animateTransform attributeName="transform" 
+                          type="rotate" 
+                          values="0 35 115; 360 35 115" 
+                          dur="1s" 
+                          repeatCount="indefinite"/>
+</line>
+</g>
+<!-- Doctor's body on scooter -->
+<!-- Head (profile) -->
+<ellipse cx="65" cy="25" rx="12" ry="15" 
+             fill="url(#skinTone)" 
+             stroke="#d4926f" 
+             stroke-width="0.5"/>
+<!-- Hair (Tom Cruise style) -->
+<path d="M 53,10 Q 60,6 66,8 Q 70,10 72,16 Q 70,20 67,22 Q 63,20 59,22 Q 55,18 53,16 Q 51,12 53,10 Z" 
+          fill="#3d2914"/>
+<!-- Hair volume/texture -->
+<path d="M 55,12 Q 61,10 65,12 Q 68,14 70,18" 
+          stroke="#5a4220" 
+          stroke-width="0.5" 
+          fill="none"/>
+<path d="M 57,14 Q 62,12 66,15" 
+          stroke="#5a4220" 
+          stroke-width="0.5" 
+          fill="none"/>
+<!-- Eye -->
+<circle cx="69" cy="23" r="1.5" fill="white"/>
+<circle cx="69.5" cy="23" r="1" fill="#333"/>
+<circle cx="69.8" cy="22.7" r="0.3" fill="white"/>
+<!-- Nose -->
+<path d="M 75,24 Q 77,25 75,26" 
+          stroke="#d4926f" 
+          stroke-width="1" 
+          fill="none"/>
+<!-- Mouth -->
+<path d="M 73,29 Q 74,29.5 75,29" 
+          stroke="#c67b6b" 
+          stroke-width="1" 
+          fill="none"/>
+<!-- Neck -->
+<rect x="62" y="37" width="8" height="8" 
+          fill="url(#skinTone)" 
+          stroke="none"/>
+<!-- White lab coat body -->
+<path d="M 45,42 L 75,42 Q 78,44 78,47 L 78,80 Q 78,85 75,88 Q 60,90 45,88 Q 42,85 42,80 L 42,47 Q 42,44 45,42 Z" 
+          fill="url(#coatGradient)" 
+          stroke="#e0e0e0" 
+          stroke-width="1"
+          filter="url(#dropShadow)"/>
+<!-- Lab coat lapels -->
+<path d="M 55,42 L 50,52 L 57,62 L 60,52 Z" 
+          fill="white" 
+          stroke="#e0e0e0" 
+          stroke-width="1"/>
+<path d="M 65,42 L 70,52 L 63,62 L 60,52 Z" 
+          fill="white" 
+          stroke="#e0e0e0" 
+          stroke-width="1"/>
+<!-- Coat buttons -->
+<circle cx="60" cy="55" r="2" fill="white" stroke="#ccc" stroke-width="0.5"/>
+<circle cx="60" cy="70" r="2" fill="white" stroke="#ccc" stroke-width="0.5"/>
+<!-- Stethoscope around neck -->
+<path d="M 55,45 Q 50,49 55,57 Q 65,62 75,57 Q 80,52 75,47" 
+          stroke="#333" 
+          stroke-width="2.5" 
+          fill="none"/>
+<!-- Stethoscope chest piece -->
+<circle cx="70" cy="59" r="3" 
+            fill="#444" 
+            stroke="#222" 
+            stroke-width="0.5"/>
+<!-- Arms holding handlebar -->
+<!-- Back arm -->
+<ellipse cx="50" cy="65" rx="5" ry="15" 
+             fill="url(#coatGradient)" 
+             stroke="#e0e0e0" 
+             stroke-width="1"
+             transform="rotate(-10 50 65)"/>
+<!-- Front arm -->
+<ellipse cx="85" cy="65" rx="5" ry="15" 
+             fill="url(#coatGradient)" 
+             stroke="#e0e0e0" 
+             stroke-width="1"
+             transform="rotate(10 85 65)"/>
+<!-- Hands on handlebar -->
+<circle cx="67" cy="50" r="3" 
+            fill="url(#skinTone)" 
+            stroke="#d4926f" 
+            stroke-width="0.5"/>
+<circle cx="88" cy="50" r="3" 
+            fill="url(#skinTone)" 
+            stroke="#d4926f" 
+            stroke-width="0.5"/>
+<!-- Leg on scooter -->
+<!-- One leg standing on deck -->
+<ellipse cx="50" cy="95" rx="6" ry="15" 
+             fill="#333" 
+             stroke="#222" 
+             stroke-width="1"/>
+<!-- Foot on deck, pointing right -->
+<ellipse cx="50" cy="108" rx="8" ry="3" 
+             fill="#222" 
+             stroke="#111" 
+             stroke-width="0.5"/>
+<!-- Lab coat flowing in wind -->
+<animateTransform attributeName="transform" 
+                      type="skewX" 
+                      values="0; -2; 0; 1; 0" 
+                      dur="2s" 
+                      repeatCount="indefinite"/>
+<!-- Subtle scooter vibration -->
+<animateTransform attributeName="transform" 
+                      type="translate" 
+                      values="0,0; 0,-0.5; 0,0; 0,-0.3; 0,0" 
+                      dur="0.3s" 
+                      repeatCount="indefinite"
+                      additive="sum"/>
+</g>
+</svg>
